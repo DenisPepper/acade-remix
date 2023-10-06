@@ -12,3 +12,7 @@ export default function Notes() {
     </main>
   );
 }
+
+/*
+https://remix.run/docs/en/main/styling/css#surfacing-styles
+*/
