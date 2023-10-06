@@ -1,4 +1,7 @@
 export default function Notes() {
-    return <h1>Notes page</h1>;
-  }
-  
+  return (
+    <main>
+      <h1>My notes</h1>
+    </main>
+  );
+}
