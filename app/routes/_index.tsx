@@ -10,3 +10,5 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return <h1>Hello Remix!</h1>;
 }
+
+//Этот компонент будет отрисован по адресу корневого роута /
