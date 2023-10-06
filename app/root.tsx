@@ -1,4 +1,4 @@
-import type { LinksFunction } from '@remix-run/node';
+import type { MetaFunction, LinksFunction } from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -7,8 +7,15 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-
 import styles from '~/styles/main.css';
+import MainNavigation from './components/main-navigation';
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: 'My Remix App' },
+    { name: 'description', content: 'Remix study project' },
+  ];
+};
 
 export const links: LinksFunction = () => {
   // `links` returns an array of objects whose
@@ -30,6 +37,9 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <header>
+          <MainNavigation />
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
